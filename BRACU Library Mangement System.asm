@@ -193,7 +193,7 @@ show_header PROC
 show_header ENDP  
 
 ;----------------------------------------------------------
-; AUTHENTICATION PROCEDURES // USER LOGIN - Raihan
+; AUTHENTICATION PROCEDURES // USER LOGIN 
 ;----------------------------------------------------------
 READ_PASSWORD PROC
     LEA SI, input_buffer
@@ -329,7 +329,7 @@ userAuth ENDP
 
 
 ;----------------------------------------------------------
-; VIEW AVAILABLE BOOK - Shahadat
+; VIEW AVAILABLE BOOK
 ;----------------------------------------------------------
 show_books PROC   
     MOV SI, 0  
@@ -405,7 +405,7 @@ display_quantity PROC
 display_quantity ENDP  
 
 ;----------------------------------------------------------
-; BORROW BOOK by CODE - Fahim
+; BORROW BOOK by CODE
 ;----------------------------------------------------------
 
 borrow_book PROC
@@ -568,7 +568,7 @@ invalid_book_code:
     RET
 borrow_book ENDP
 ;----------------------------------------------------------
-; RETURN BOOK +FINE CALCULATION - Shahadat
+; RETURN BOOK +FINE CALCULATION
 ;----------------------------------------------------------
 return_book PROC
     PRINT_STRING enter_code
@@ -872,7 +872,7 @@ done_display:
     RET
 display_word_number ENDP
 ;----------------------------------------------------------
-; REQUEST NEW BOOK - Raihan
+; REQUEST NEW BOOK
 ;---------------------------------------------------------- 
 
 request_new_book PROC
@@ -995,7 +995,7 @@ copy_done:
 store_request ENDP
 
 ;----------------------------------------------------------
-; MOST BORROWED BOOKS - Fahim
+; MOST BORROWED BOOKS
 ;----------------------------------------------------------
 show_most_borrowed PROC
     NEW_LINE
@@ -1220,7 +1220,7 @@ display_book_name:
 display_book_info ENDP
 
 ;--------------------------------------------------------------------
-; ADMIN PROCEDURES to SEE THE BOOK REQ - extra feature done by Fahim
+; ADMIN PROCEDURES to SEE THE BOOK REQ
 ;--------------------------------------------------------------------
 view_requests PROC
     MOV AL, request_count
